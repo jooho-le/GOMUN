@@ -23,7 +23,11 @@ html, body, #app { height: 100% }
 body { margin: 0 }
 
 a { color: inherit }
-button { font-family: inherit }
+button {
+  font-family: inherit;
+  user-select: none;
+  -webkit-user-select: none;
+}
 
 /* Reset lists */
 ul, ol { padding: 0; margin: 0 }
@@ -37,7 +41,8 @@ body { background: #f8fafc }
 body::before {
   content: "";
   position: fixed; inset: 0; z-index: -1;
-  background: radial-gradient(900px 500px at 10% -10%, #eef2ff 0%, rgba(238,242,255,0) 60%),
+  background: linear-gradient(to bottom, #ffffff 0, #ffffff 96px, rgba(255,255,255,0) 96px),
+              radial-gradient(900px 500px at 10% -10%, #eef2ff 0%, rgba(238,242,255,0) 60%),
               radial-gradient(800px 480px at 95% 0%, #ecfeff 0%, rgba(236,254,255,0) 60%),
               linear-gradient(#f8fafc, #ffffff);
 }

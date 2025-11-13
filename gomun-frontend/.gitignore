@@ -1,0 +1,40 @@
+﻿# Node/Vite
+node_modules/
+dist/
+.vite/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite env
+.env
+.env.*
+!.env.example
+
+# Editor/OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Coverage/cache
+coverage/
+.cache/
+
+# Firebase/Vercel
+.firebase/
+firebase-debug.log
+.vercel/
+
+# Python server (server_py)
+server_py/__pycache__/
+server_py/.venv/
+server_py/.pytest_cache/
+*.pyc
+# Local stray binaries / packs
+/vue-tsc
+/gomun-frontend@*
+*.tgz

@@ -1,0 +1,6 @@
+>           <article class="modal__content modal__content--wide auth-modal" @click.stop>
+              <div class="auth__header">
+                <h3>GOMUN ·Î±×ÀÎ</h3>
+> .auth-modal {
+    max-width: 520px;
+  }
